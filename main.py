@@ -8,7 +8,8 @@ app = FastAPI()
 # CORS setup so your React app can talk to this API
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # React dev server
+    allow_origins=["http://localhost:3000", 
+     "https://milagroscasaperalta.com"], 
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
